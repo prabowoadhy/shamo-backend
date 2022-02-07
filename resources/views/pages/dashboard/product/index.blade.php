@@ -14,7 +14,9 @@
                 },
                 columns: [
                     { data: 'id', name: 'id', width: '5%'},
+                    { data: 'category.name', name: 'category.name' },
                     { data: 'name', name: 'name' },
+                    { data: 'price', name: 'price' },
                     { 
                         data: 'action', 
                         name: 'action', 
@@ -31,8 +33,8 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             {{-- <div class="mx-auto max-m-7xl sm:px-6 lg:px8"> --}}
                 <div class="mb-10">
-                    <a href="{{ route('dashboard.category.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded shadow-lg">
-                    + Create Category
+                    <a href="{{ route('dashboard.product.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded shadow-lg">
+                    + Create Product
                     </a>
                 </div>
                 <div class="shadow overflow-hidden sm:rounded-md">
@@ -41,7 +43,9 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
+                                    <th>Category</th>
                                     <th>Name</th>
+                                    <th>Price</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
